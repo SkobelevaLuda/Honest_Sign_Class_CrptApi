@@ -71,9 +71,7 @@ public class CrptApi {
 
         Description description = this.new Description(participant_inn);
 
-        return this.new Document(description, doc_id, doc_status, doc_type,
-                importRequest, participant_inn, producer_inn, production_date,
-                production_type, products, reg_date, reg_number);
+        return this.new Document(description, doc_id, doc_status, doc_type, importRequest, participant_inn, producer_inn, production_date, production_type, products, reg_date, reg_number);
     }
 
     private class Limit {
@@ -164,8 +162,6 @@ public class CrptApi {
         private String signature;
 
 
-        public Body(Document_Format documentFormat, String docJson, Type type, String signature) {
-        }
     }
 
     interface Converter {
